@@ -600,6 +600,8 @@ function varupdate() {
   v2Assign(volt2);
 
   let v0 = volt1*(resf/(res2+resf)*(1+ (resf/res1)))-((resf/res1)*volt2)
+
+  // V1(Rf/R2+Rf)*(1+ Rf/R21) - (Rf/R1)*V2
   // v0Assign(v0);
 
   if (isNaN(v0) || !isFinite(v0)) {
