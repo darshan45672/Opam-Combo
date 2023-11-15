@@ -378,7 +378,9 @@ td {
 .column-font {
   display: none;
 }
-
+#p3{
+  display: none; 
+}
 #result-display-div {
   display: none;
   grid-column: 1/-1;

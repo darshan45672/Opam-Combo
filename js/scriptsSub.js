@@ -697,7 +697,7 @@ function addtable(){
 }
 
 function showResult() {
-  document.getElementById('result-display-div').style.display = 'block'    
+  document.getElementById('p3').style.display = 'block'    
 }
 
 
