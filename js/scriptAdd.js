@@ -618,6 +618,7 @@ function startSimulation(){
   $("#result-btn").prop("disabled", false);
   $("#message").text("Vary the parameters and click on Add to table to take the readings")
   displayInstructions("Step 2: Vary the parameters and click on Add to table to take the readings ")
+  
   resistance2Display(0);
   resistance1Display(0);
   resistancefDisplay(0);
