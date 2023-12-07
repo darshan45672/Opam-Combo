@@ -386,7 +386,15 @@ function resistancefDisplay(res){
   ctx.fillText(text,470, 75)
   ctx.fillStyle = "black";
 }
-
+  function displayInstructions(text) {
+    ctx.fillStyle = "white";
+    ctx.fillRect(10,5, 390, 30);
+    ctx.fillStyle = "black";
+    ctx.font = "20px Arial";
+    ctx.textBaseline = "middle";
+    ctx.fillText(text,15, 20)
+    ctx.fillStyle = "black";
+  }
 //Initialise system parameters here
 function varinit() {
   varchange();
@@ -421,6 +429,8 @@ function varinit() {
 
   $("#add-to-table-btn").prop("disabled", true);
   $("#result-btn").prop("disabled", true);
+  $("#message").text("Click on start simulation")
+  displayInstructions("Step 1: Click on start simulation")
 }
 
 function varchange() {
@@ -606,7 +616,9 @@ function startSimulation(){
   $("#simulate-btn").prop("disabled", true);
   $("#add-to-table-btn").prop("disabled", false);
   $("#result-btn").prop("disabled", false);
-
+  $("#message").text("Vary the parameters and click on Add to table to take the readings")
+  displayInstructions("Step 2: Vary the parameters and click on Add to table to take the readings ")
+  
   resistance2Display(0);
   resistance1Display(0);
   resistancefDisplay(0);
